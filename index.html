@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fem-coding</title>
+    <style>
+      body {
+        background-color: #f9f7fe;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        padding: 17px 0 0;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+      }
+      p {
+        margin: 20px;
+        font-size: 20px;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 10px;
+      }
+      a:hover {
+        text-decoration-line: none;
+      }
+      button {
+        color: #fff;
+        background: #885df1;
+        border-radius: 25px;
+        margin: 0 auto 20px;
+        display: block;
+        border: 1px solid #885df1;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #885df1;
+        background-color: #fff;
+        cursor: pointer;
+      }
+
+      .codingAll {
+        display: 50%;
+        max-width: 50%;
+        margin: 0 auto;
+        border-radius: 15px;
+        background: #fff;
+        font-family: helvetica;
+        box-shadow: rgba(37, 39, 89, 0.08) 9px 9px 9px 0px;
+      }
+      .link {
+        text-align: center;
+      }
+      .languages {
+        width: 50px;
+      }
+      .contactAll {
+        padding: 30px 5px;
+        text-align: center;
+      }
+      .contact {
+        color: #885df1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="codingAll">
+      <h1>Ukrainian Women-In-Tech💻</h1>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/845/original/Wavy_Bus-20_Single-04.jpg?1680458704"
+        alt="Female programmer"
+      />
+      <h2>Women in Tech: From 7 to 27% in 9 Years</h2>
+      <hr />
+      <p>
+        Over the last 9 years, the share of women in the Ukrainian tech industry
+        has tripled. Such data is provided by one of the largest technology
+        companies with several offices in Ukraine ‒ GlobalLogic. Let’s learn
+        more details on how the number of women in tech changed in recent years
+        both in Ukraine and in Lviv.
+        <br />
+        <br />
+        According to GlobalLogic estimates,
+        <strong>at the beginning of 2012, about 7%</strong> of women worked in
+        the tech sector, <strong>and as of early 2021 ‒ 27%.</strong> The number
+        of female specialists in the tech industry is growing by an average of
+        15% every year.
+        <br />
+        <br />
+        According to the latest survey by DOU.UA, 27% of all tech industry
+        employees registered in the state register of Ukraine are women.
+        <strong>
+          The largest number of women among tech specialists is registered in
+          Lviv and Kharkiv regions (31% and 29%, respectively).</strong
+        >
+        According to the latest data, the overall number of tech specialists in
+        Ukraine is 212,547.
+      </p>
+      <hr />
+      <h2>
+        Top 5 Programming Languages <br />
+        Chosen by Ukrainian Women-In-Tech
+      </h2>
+      <ul>
+        <li>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/262/original/png-javascript-badge-picture-8.png?1680197169"
+            alt="javascript"
+            class="languages"
+          />
+        </li>
+        <li>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/821/original/c-sharp-c-logo-02F17714BA-seeklogo.com.png?1680457308"
+            alt="C#"
+            class="languages"
+          />
+        </li>
+        <li>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/826/original/icons8-java-480.png?1680457816"
+            alt="java"
+            class="languages"
+          />
+        </li>
+        <li>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/833/original/php-1-logo-png-transparent.png?1680457960"
+            alt="php"
+            class="languages"
+          />
+        </li>
+        <li>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/839/original/Python-logo-notext.svg.png?1680458098"
+            alt="python"
+            class="languages"
+          />
+        </li>
+      </ul>
+      <hr />
+      <p class="link">
+        <em
+          >If you want to know more, click 👉<a
+            href="https://lvivtech.com/uk/women-in-the-ukrainian-tech-industry/"
+            target="_blank"
+          >
+            here</a
+          ></em
+        >👈
+      </p>
+
+      <button>👉Take part in the survey</button>
+      <p class="contactAll">
+        Coded by <span class="contact"> Ann Kulias</span>
+      </p>
+    </div>
+    <script>
+      function joinSheCodes() {
+        let name = prompt("What is your first name?");
+        let age = prompt("How old are you?");
+        let country = prompt("What country are you from?");
+        let languages = prompt("What is your favorite programming language?");
+
+        if (age >= 18) {
+          alert("Hi, " + name + "! Thank you for taking the survey😊!");
+        } else {
+          alert("Sorry, " + name + "! You cannot take part in the survey😕");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", joinSheCodes);
+    </script>
+  </body>
+</html>
